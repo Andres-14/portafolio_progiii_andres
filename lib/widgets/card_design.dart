@@ -8,11 +8,11 @@ class CardDesign extends StatelessWidget {
   final String description;
 
   const CardDesign({
-    Key? key,
+    super.key,
     required this.url,
     required this.title,
     required this.description,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -49,4 +49,3 @@ class CardDesign extends StatelessWidget {
     );
   }
 }
-  

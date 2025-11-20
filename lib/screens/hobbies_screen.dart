@@ -3,7 +3,7 @@ import 'package:portafolio_progiii_andres/widgets/widgets.dart';
 
 class HobbiesScreen extends StatelessWidget {
    
-  const HobbiesScreen({Key? key}) : super(key: key);
+  const HobbiesScreen({super.key});
   
   @override
   Widget build(BuildContext context) {

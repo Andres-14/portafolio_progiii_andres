@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portafolio_progiii_andres/widgets/widgets.dart';
 
 class AboutMeScreen extends StatelessWidget {
-  const AboutMeScreen({Key? key}) : super(key: key);
+  const AboutMeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

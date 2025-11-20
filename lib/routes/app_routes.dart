@@ -5,6 +5,7 @@ import 'package:portafolio_progiii_andres/screens/screens.dart';
 class AppRoutes {
 
   static const initialRoute = '/wrapper';
+  static const signature = '/signature';
 
   static final menuOptions = <MenuOptions>[
     MenuOptions(label: 'Sobre Mi', icon: Icons.person, route: '/about_me',),
@@ -18,4 +19,5 @@ Map<String, Widget Function(BuildContext)> appRoutes = {
   '/about_me': (BuildContext context) => const AboutMeScreen(),
   '/goals': (BuildContext context) => const GoalsScreen(),
   '/hobbies': (BuildContext context) => const HobbiesScreen(),
+  '/signature': (BuildContext context) => const SignatureScreen(),
 };

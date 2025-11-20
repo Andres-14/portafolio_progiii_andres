@@ -31,8 +31,19 @@ class _MainWrapperScreenState extends State<MainWrapperScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(AppRoutes.menuOptions[_selectedIndex].label, style: const TextStyle(fontWeight: FontWeight.bold),)
-      ),
+        title: Text(AppRoutes.menuOptions[_selectedIndex].label, style: const TextStyle(fontWeight: FontWeight.bold),),
+
+        actions: [
+        IconButton(
+          icon: const Icon(Icons.person_4_rounded),
+          onPressed: () {
+
+            Navigator.pushNamed(context, AppRoutes.signature);
+          },
+        ),
+        const SizedBox(width: 10),
+      ],
+    ),
 
       body: IndexedStack(
         index: _selectedIndex,

@@ -3,7 +3,7 @@ import 'package:portafolio_progiii_andres/widgets/widgets.dart';
 
 class GoalsScreen extends StatelessWidget {
    
-  const GoalsScreen({Key? key}) : super(key: key);
+  const GoalsScreen({super.key});
   
   @override
   Widget build(BuildContext context) {
