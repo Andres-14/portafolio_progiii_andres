@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:portafolio_progiii_andres/themes/app_theme.dart';
 
-class CardDesign extends StatelessWidget {
+class InfoCardDesign extends StatelessWidget {
 
-  final String url;
   final String title;
   final String description;
 
-  const CardDesign({
-    Key? key,
-    required this.url,
+  const InfoCardDesign({
+    super.key,
     required this.title,
     required this.description,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -23,15 +21,6 @@ class CardDesign extends StatelessWidget {
       color: AppTheme.alternativeColor2,
       child: Column(
         children: [
-          FadeInImage(
-            image: NetworkImage(url),
-            placeholder: const NetworkImage('https://usagif.com/wp-content/uploads/loading-25.gif'),
-            width: double.infinity,
-            height: 230,
-            fit: BoxFit.cover,
-            fadeInDuration: const Duration(milliseconds: 300),
-          ),
-          
           Container(
             padding: const EdgeInsets.all(10),
             alignment: Alignment.centerLeft,
@@ -49,4 +38,3 @@ class CardDesign extends StatelessWidget {
     );
   }
 }
-  
