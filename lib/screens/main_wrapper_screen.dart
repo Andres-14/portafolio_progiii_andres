@@ -44,7 +44,7 @@ class _MainWrapperScreenState extends State<MainWrapperScreen> {
           boxShadow: [
             BoxShadow(
               blurRadius: 20,
-              color: Colors.black12, spreadRadius: 1),
+              color: AppTheme.alternativeColor2, spreadRadius: 1),
           ],
         ),
 
